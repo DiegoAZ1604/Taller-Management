@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles-repuestos.css">
 </head>
 <body>
-    <!-- Barra lateral -->
+    <!-- Barra lateral-->
     <div class="sidebar-container">
         <div class="sidebar">
             <div class="logo-container">
@@ -20,11 +20,35 @@
             <a class="nav-button" href="index.html">Salir</a>
         </div>
     </div>
-    <div class="repuestos-container">
+
+    <!--formulario para ingresar repuestos-->
+    <div class="ingresar-repuestos-container">
+        <h3>Registrar un nuevo repuesto:</h3>
+        <form id="repuestos-form">
+            <label for="repuestos-dropdown1">Seleccione un tipo de repuesto: </label>
+            <select name="repuestos-dropdown1" id="repuestos-dropdown1">
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="repuestos-basicos">Repuestos Básicos</option>
+                <option value="sistema-electrico">Sistema Eléctrico</option>
+                <option value="sistema-endendido">Sistema de Encendido</option>
+                <option value="sistema-frenos">Sistema de Frenos</option>
+                <option value="sistema-suspension">Sistema de Suspensión</option>
+                <option value="sistema-motor">Sistema Motor</option>
+            </select>
+            <input type="text" placeholder="Nombre de la Pieza" required>
+            <input type="number" placeholder="Cantidad" required>
+            <input type="number" placeholder="Precio individual" required>
+        </form>
+        <button id="enviar" type="button">Enviar</button>
+    </div>
+
+    <!-- tabla-->
+    <div class="tabla-repuestos-container">
         <h3>Inventario de Repuestos:</h3>
         <form id="repuestos-form">
-            <label for="repuestos-dropdown">Repuestos</label>
+            <label for="repuestos-dropdown">Repuestos:</label>
             <select name="repuestos-dropdown" id="repuestos-dropdown">
+                <option value="" disabled selected>Seleccione...</option>
                 <option value="repuestos-basicos">Repuestos Básicos</option>
                 <option value="sistema-electrico">Sistema Eléctrico</option>
                 <option value="sistema-endendido">Sistema de Encendido</option>
@@ -33,11 +57,11 @@
                 <option value="sistema-motor">Sistema Motor</option>
             </select>
         </form>
-        <table>
+        <table class="table">
             <tr>
-                <th>Grupo del Repuesto</th>
-                <th>Nombre de Pieza</th>
-                <th>Cantidad</th>
+                <th><b>Grupo del Repuesto</b></th>
+                <th><b>Nombre de Pieza</b></th>
+                <th><b>Cantidad</b></th>
             </tr>
             <tr>
                 <td>Repuestos Básicos</td>

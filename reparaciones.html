@@ -26,15 +26,25 @@
         <h3>Registrar una reparación:</h3>
         <form id="reparaciones-form">
             <input type="text" id="descripcion-input" placeholder="Descripción del Problema" required>
-            <input type="text" placeholder="Piezas Utilizadas" required>
-            <input type="text" placeholder="Tiempo Empleado (horas)" required>
-            <input type="text" placeholder="Costo Estimado ($)" required>
+            <input type="text" placeholder="Repuestos Utilizados" required>
+            <input type="number" placeholder="Tiempo Empleado (horas)" required>
+            <input type="number" placeholder="Costo Estimado ($)" required>
             <input type="text" placeholder="Notas Adicionales">
+            <div class="vehiculo-dropdown">
+                <label for="vehiculo-a-reparar">Seleccione el vehiculo a reparar: </label>
+                <select name="vehiculo-a-reparar" id="vehiculo-a-reparar">
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="Vehiculo 1">Vehiculo 1</option>
+            </select>
+            </div>
         </form>
         <button id="enviar" type="button">Enviar</button>
     </div>
-
+    
     <!-- Contenedor para visualizar reparaciones -->
+    <div class="reparaciones-tabla">
+
+    </div>
     
     <script src="script.js"></script>
 </body>

@@ -8,10 +8,11 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 100vh;
+    background-color: darkgray;
 }
 /*containers*/
 .reparaciones-container{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: gray;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -19,17 +20,11 @@ body{
     text-align: center;
     margin: 10pxs;
     flex: 1;
-}
-
-.salir-container{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-align: right;
+    margin-left: 280px;
+    margin-top: 10px;
 }
 
 /*logo*/
-
 .logo-container{
     display: flex;
     justify-content: center;
@@ -61,6 +56,11 @@ body{
     text-align: center;
 }
 
+.reparaciones-container select{
+    display: block;
+    margin: 15px auto 15px;
+}
+
 /*buttons*/
 .reparaciones-container button{
     background-color: black;
@@ -69,58 +69,12 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .reparaciones-container button:hover{
     background-color: darkgrey;
-}
-
-#salir-button{
-    background-color: black;
-    color: whitesmoke;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#clientes-button{
-    background-color: black;
-    color: whitesmoke;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/*otro*/
-
-#modo-oscuro{
-    background-color: black;
-    color: whitesmoke;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.modo-oscuro{
-    background-color: black;
-    color: whitesmoke;
-}
-
-.repuestos-container table{
-    width: 100%;
-    margin-top: 15px;
-}
-
-.reparaciones-container th{
-    background-color: #f0f0f0;
+    color: black;
 }
 
 /*sidebar*/
@@ -133,6 +87,9 @@ body{
     top: 0;
     left: 0;
     padding: 20px;
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
 }
 .logo{
     margin-bottom: 20px;
@@ -148,11 +105,10 @@ body{
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-
-
-
-
-
-
+.nav-button:hover{
+    background-color: darkgray;
+    color: black;
+}

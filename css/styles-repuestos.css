@@ -1,3 +1,4 @@
+/*body*/
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +8,42 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 100vh;
+    background-color: darkgrey;
+}
+
+/*containers*/
+.ingresar-repuestos-container{
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 10pxs;
+    flex: 1;
+    margin-left: 280px;
+    margin-top: 10px;
+}
+
+.tabla-repuestos-container{
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 10pxs;
+    margin-left: 280px;
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.repuestos-container table{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 15px;
 }
 
 /*logo*/
@@ -22,6 +59,48 @@ body{
     height: 100px;
 }
 
+/*inputs*/
+.ingresar-repuestos-container input{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ingresar-repuestos-container select{
+    display: block;
+    margin: 20px auto 15px;
+}
+
+/*buttons*/
+.ingresar-repuestos-container button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.ingresar-repuestos-container button:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+/**tabla*/
+.reparaciones-container table th,
+.reparaciones-container table td{
+    align-items: center;
+    text-align: center;
+}
+.table{
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
 /*sidebar*/
 .sidebar{
     background-color: #333;
@@ -32,6 +111,10 @@ body{
     top: 0;
     left: 0;
     padding: 20px;
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .logo{
     margin-bottom: 20px;
@@ -47,4 +130,10 @@ body{
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-button:hover{
+    background-color: darkgray;
+    color: black;
 }

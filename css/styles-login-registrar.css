@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.login-container input{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-container button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover{
+    background-color: darkgrey;
+}
+
+#modo-oscuro{
+    background-color: black;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#modo-oscuro:hover{
+    background-color: darkgrey;
+}
+
+.registro-container{
+    background: rgba(255, 255, 255, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+.registro-container h2{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.registro-container input{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#logo{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.modo-oscuro{
+    background-color: black;
+    color: whitesmoke;
+}
+

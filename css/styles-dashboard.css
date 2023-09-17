@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.reparaciones-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+    margin: 10pxs;
+    flex: 1;
+}
+
+.repuestos-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 10pxs;
+    
+}
+
+#descripcion-input{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 120px;
+}
+.reparaciones-container input{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reparaciones-container button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reparaciones-container button:hover{
+    background-color: darkgrey;
+}
+
+#modo-oscuro{
+    background-color: black;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modo-oscuro{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.repuestos-container table{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.reparaciones-container th{
+    background-color: #f0f0f0;
+}
+
+.salir-container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+#salir-button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clientes-container{
+    position: fixed;
+    bottom: 10px;
+    right: 125px;
+    text-align: center;
+}
+
+#clientes-button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}

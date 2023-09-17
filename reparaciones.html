@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparaciones</title>
+    <link rel="stylesheet" href="css/styles-reparaciones.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar-container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <a class="nav-button" href="reparaciones.html">Reparaciones</a>
+            <a class="nav-button" href="repuestos.html">Repuestos</a>
+            <a class="nav-button" href="vehiculos.html">Vehículos</a>
+            <a class="nav-button" href="clientes.html">Clientes</a>
+            <a class="nav-button" href="index.html">Salir</a>
+        </div>
+    </div>
+
+    <!-- Formulario para registrar una reparación -->
+    <div class="reparaciones-container">   
+        <h3>Registrar una reparación:</h3>
+        <form id="reparaciones-form">
+            <input type="text" id="descripcion-input" placeholder="Descripción del Problema" required>
+            <input type="text" placeholder="Piezas Utilizadas" required>
+            <input type="text" placeholder="Tiempo Empleado (horas)" required>
+            <input type="text" placeholder="Costo Estimado ($)" required>
+            <input type="text" placeholder="Notas Adicionales">
+        </form>
+        <button id="enviar" type="button">Enviar</button>
+    </div>
+
+    <!-- Contenedor para visualizar reparaciones -->
+    
+    <script src="script.js"></script>
+</body>
+</html>

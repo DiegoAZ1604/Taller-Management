@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repuestos</title>
+    <link rel="stylesheet" href="css/styles-repuestos.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar-container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo">
+            </div>
+            <a class="nav-button" href="reparaciones.html">Reparaciones</a>
+            <a class="nav-button" href="repuestos.html">Repuestos</a>
+            <a class="nav-button" href="vehiculos.html">Vehículos</a>
+            <a class="nav-button" href="clientes.html">Clientes</a>
+            <a class="nav-button" href="index.html">Salir</a>
+        </div>
+    </div>
+    <div class="repuestos-container">
+        <h3>Inventario de Repuestos:</h3>
+        <form id="repuestos-form">
+            <label for="repuestos-dropdown">Repuestos</label>
+            <select name="repuestos-dropdown" id="repuestos-dropdown">
+                <option value="repuestos-basicos">Repuestos Básicos</option>
+                <option value="sistema-electrico">Sistema Eléctrico</option>
+                <option value="sistema-endendido">Sistema de Encendido</option>
+                <option value="sistema-frenos">Sistema de Frenos</option>
+                <option value="sistema-suspension">Sistema de Suspensión</option>
+                <option value="sistema-motor">Sistema Motor</option>
+            </select>
+        </form>
+        <table>
+            <tr>
+                <th>Grupo del Repuesto</th>
+                <th>Nombre de Pieza</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Repuestos Básicos</td>
+                <td>Filtro de Aceite</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Repuestos Básicos</td>
+                <td>Correa Distribución</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

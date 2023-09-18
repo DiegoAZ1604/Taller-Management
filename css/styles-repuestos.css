@@ -39,13 +39,6 @@ body{
     place-content: center;
 }
 
-.repuestos-container table{
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: 15px;
-}
-
 /*logo*/
 .logo-container{
     display: flex;
@@ -90,12 +83,7 @@ body{
     color: black;
 }
 
-/**tabla*/
-.reparaciones-container table th,
-.reparaciones-container table td{
-    align-items: center;
-    text-align: center;
-}
+/**tabla**/
 .table{
     margin-top: 15px;
     border: 1px solid black;
@@ -114,7 +102,6 @@ body{
     margin-right: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 .logo{
     margin-bottom: 20px;

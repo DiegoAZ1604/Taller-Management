@@ -20,5 +20,40 @@
             <a class="nav-button" href="index.html">Salir</a>
         </div>
     </div>
+
+    <!--Formulario para registrar un nuevo vehiculo-->
+    <div class="vehiculos-container">
+        <h3>Registrar un nuevo vehiculo:</h3>
+        <form id="vehiculos-form">
+            <input type="text" placeholder="Nombre del dueño" required>
+            <input type="text" placeholder="Número de placa" required>
+            <input type="text" placeholder="Marca" required>
+            <input type="text" placeholder="Modelo" required>
+            <input type="number" placeholder="Año" required>
+        </form>
+        <button id="enviar" type="button">Enviar</button>
+    </div>
+
+    <!--tabla-->
+    <div class="tabla-vehiculos-container">
+        <h3>Registro de Vehiculos:</h3>
+        <table class="table">
+            <tr>
+                <th><b>Nombre del Dueño</b></th>
+                <th><b>Número de Placa</b></th>
+                <th><b>Marca</b></th>
+                <th><b>Modelo</b></th>
+                <th><b>Año</b></th>
+            </tr>
+            <tr>
+                <td>Diego Fuentes</td>
+                <td>P601502</td>
+                <td>Nissan</td>
+                <td>Altima SR V6</td>
+                <td>2012</td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

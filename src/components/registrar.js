@@ -7,12 +7,11 @@ function Register(){
     const [LastName, setLastName] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        
+        setSuccessMessage("Usuario creado con éxito");  
     };
 
     return(
@@ -38,6 +37,7 @@ function Register(){
                     <button type="submit" id="register-button">Registrar</button>
 
                 </form>
+                {successMessage && <p className="success-message">{successMessage}</p>}
                 <h3>Ya tienes una cuenta? <Link to="/">Inicia Sesión</Link></h3>
             </div>
         </section>

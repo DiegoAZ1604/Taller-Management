@@ -1,5 +1,3 @@
-
-/*body*/
 body{
     margin: 0;
     padding: 0;
@@ -12,8 +10,8 @@ body{
     background-color: darkgray;
 }
 
-/*containers*/
-.reparaciones-container{
+/*Containers*/
+.vehiculos-container{
     background-color: gray;
     padding: 20px;
     border-radius: 10px;
@@ -26,7 +24,7 @@ body{
     margin-top: 10px;
 }
 
-.tabla-reparaciones-container{
+.tabla-vehiculos-container{
     background-color: grey;
     padding: 20px;
     border-radius: 10px;
@@ -54,31 +52,17 @@ body{
 }
 
 /*inputs*/
-#descripcion-input{
+.vehiculos-container input{
     width: 50%;
     padding: 5px;
     margin-bottom: 15px;
     border: 1px solid;
     border-radius: 5px;
     text-align: center;
-    height: 120px;
-}
-.reparaciones-container input{
-    width: 50%;
-    padding: 5px;
-    margin-bottom: 15px;
-    border: 1px solid;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.reparaciones-container select{
-    display: block;
-    margin: 15px auto 15px;
 }
 
 /*buttons*/
-.reparaciones-container button{
+.vehiculos-container button{
     background-color: black;
     color: whitesmoke;
     padding: 10px 20px;
@@ -88,13 +72,7 @@ body{
     transition: background-color 0.2s, color 0.2s;
 }
 
-.reparaciones-container button:hover{
+.vehiculos-container button:hover{
     background-color: darkgrey;
     color: black;
-}
-
-/*tabla*/
-.table{
-    margin-top: 15px;
-    border: 1px solid black;
 }

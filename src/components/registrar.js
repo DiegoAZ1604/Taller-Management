@@ -17,8 +17,10 @@ function Register(){
     return(
         <section>
             <div className="registro-container">
-
-                //imagen
+                <div className="logo-container">
+                    <img src="/imagenes/logo.png" id="Logo" alt="Logo" />
+                </div>
+                
                 <h2>Registrar Usuario</h2>
                 <form onSubmit={handleSubmit}>
 

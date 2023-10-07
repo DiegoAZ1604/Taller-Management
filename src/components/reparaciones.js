@@ -1,27 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/reparaciones.css"
+import "../styles/reparaciones.css";
+import SidebarC from "./sidebar";
 
 function Reparaciones() {
     return (
         <div className="content-container">
             <div className="sidebar-container">
-                <div className="logo-container">
-                    {/*imagen*/}
-                </div>
-                <Link to="/reparaciones" className="nav-button">Reparaciones</Link>
-                <Link to="/repuestos" className="nav-button">Repuestos</Link>
-                <Link to="/vehiculos" className="nav-button">Vehiculos</Link>
-                <Link to="/clientes" className="nav-button">Clientes</Link>
-                <Link to="/" className="nav-button">Salir</Link>
+                <SidebarC />
             </div>
+            
             <div className="reparaciones-container">
                 <h3>Registrar una Reparación</h3>
                 <form id="ingresar-reparaciones-form">
                     <div className="vehiculo-dropdown">
                         <label htmlFor="vehiculo-a-reparar">Seleccione el vehiculo a reparar: </label>
                         <select name="vehiculo-a-reparar" id="vehiculo-a-reparar">
-                            <option value="" disabled selected>Seleccione...</option>
+                            <option value="" defaultChecked>Seleccione...</option>
                             <option value={"Vehiculo 1"}>Vehiculo 1</option>
                         </select>
                     </div>

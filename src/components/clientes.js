@@ -1,23 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import SidebarC from "./sidebar";
+import "../styles/clientes.css";
 
 function Clientes(){
     return(
         <div className="content-container">
             <div className="sidebar-container">
-                <div className="sidebar">
-                    <div className="logo-container">
-                        {/*imagen*/}
-                    </div>
-                    <Link to="/reparaciones" className="nav-button">Reparaciones</Link>
-                    <Link to="/repuestos" className="nav-button">Repuestos</Link>
-                    <Link to="/vehiculos" className="nav-button">Vehiculos</Link>
-                    <Link to="/clientes" className="nav-button">Clientes</Link>
-                    <Link to="/" className="nav-button">Salir</Link>
-                </div>
+                <SidebarC />
             </div>
 
-            <div class="clientes-container">
+            <div className="clientes-container">
                 <h3>Registrar un Cliente:</h3>
                 <form id="ingresar-clientes-form">
                     <input type="text" placeholder="Nombre" required />
@@ -28,19 +20,23 @@ function Clientes(){
             </div>
 
     
-            <div class="tabla-clientes-container">
+            <div className="tabla-clientes-container">
                 <h3>Registro de Clientes:</h3>
-                <table class="table">
-                    <tr>
+                <table className="table">
+                    <thead>
+                        <tr>
                         <th><b>Nombre</b></th>
                         <th><b>Número de teléfono</b></th>
                         <th><b>Correo Electrónico</b></th>
-                    </tr>
-                    <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
                         <td>Diego Fuentes</td>
                         <td>63053058</td>
                         <td>diegofuentesa41@icloud.com</td>
-                    </tr>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

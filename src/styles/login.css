@@ -25,6 +25,10 @@ body{
     margin-top: 200px;
 }
 
+.logo-container{
+    margin-right: 30px;
+}
+
 /*h2*/
 .registro-container h2,
 .login-container h2{

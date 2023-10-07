@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "../styles/sidebar.css";
-import { Authenticate } from "../autenticacion";
 
-function SidebarC({ isAuthenticated, username }) {
+function SidebarC() {
     return (
         <div className="sidebar-container">
             <div className="sidebar">

@@ -23,9 +23,11 @@ function Login() {
   return (
     <section>
       <div className="login-container">
+
         <div className="logo-container">
           <img src="/imagenes/logo.png" id="Logo" alt="Logo" />
         </div>
+        
         <h2>Bienvenidos a AutoGenius</h2>
         <form onSubmit={handleSubmit}>
           <input

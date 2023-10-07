@@ -9,7 +9,7 @@ function Repuestos() {
                 <SidebarC />
             </div>
 
-            <div className="ingresar-repuestos-container">
+            <div className="repuestos-container">
                 <h3>Registrar un nuevo repuesto:</h3>
                 <form id="ingresar-repuestos-form">
                     <label htmlFor="repuestos-dropdown1">Seleccione un tipo de repuesto: </label>
@@ -32,9 +32,9 @@ function Repuestos() {
             <div className="tabla-repuestos-container">
             <h3>Inventario de Repuestos:</h3>
             <form id="repuestos-form">
-                <label for="repuestos-dropdown">Repuestos:</label>
+                <label htmlFor="repuestos-dropdown">Repuestos:</label>
                 <select name="repuestos-dropdown" id="repuestos-dropdown">
-                    <option value="" disabled selected>Seleccione...</option>
+                    <option value="" defaultChecked>Seleccione...</option>
                     <option value="repuestos-basicos">Repuestos Básicos</option>
                     <option value="sistema-electrico">Sistema Eléctrico</option>
                     <option value="sistema-endendido">Sistema de Encendido</option>
@@ -44,21 +44,25 @@ function Repuestos() {
                 </select>
             </form>
             <table className="table">
-                <tr>
-                    <th><b>Grupo del Repuesto</b></th>
-                    <th><b>Nombre de Pieza</b></th>
-                    <th><b>Cantidad</b></th>
-                </tr>
-                <tr>
-                    <td>Repuestos Básicos</td>
-                    <td>Filtro de Aceite</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Repuestos Básicos</td>
-                    <td>Correa Distribución</td>
-                    <td>5</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th><b>Grupo del Repuesto</b></th>
+                        <th><b>Nombre de Pieza</b></th>
+                        <th><b>Cantidad</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Repuestos Básicos</td>
+                        <td>Filtro de Aceite</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Repuestos Básicos</td>
+                        <td>Correa Distribución</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
             </table>
             </div>
         </div>

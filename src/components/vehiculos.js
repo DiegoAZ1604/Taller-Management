@@ -24,20 +24,24 @@ function Vehiculos(){
             <div className="tabla-vehiculos-container">
                 <h3>Registro de Vehiculos:</h3>
                 <table className="table">
-                    <tr>
-                        <th><b>Nombre del Dueño</b></th>
-                        <th><b>Número de Placa</b></th>
-                        <th><b>Marca</b></th>
-                        <th><b>Modelo</b></th>
-                        <th><b>Año</b></th>
-                    </tr>
-                    <tr>
-                        <td>Diego Fuentes</td>
-                        <td>P601502</td>
-                        <td>Nissan</td>
-                        <td>Altima SR V6</td>
-                        <td>2012</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th><b>Nombre del Dueño</b></th>
+                            <th><b>Número de Placa</b></th>
+                            <th><b>Marca</b></th>
+                            <th><b>Modelo</b></th>
+                            <th><b>Año</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diego Fuentes</td>
+                            <td>P601502</td>
+                            <td>Nissan</td>
+                            <td>Altima SR V6</td>
+                            <td>2012</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

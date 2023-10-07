@@ -1,25 +1,12 @@
-/*body*/
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    background-color: darkgrey;
-}
-
 /*containers*/
-.ingresar-repuestos-container{
+.repuestos-container{
     background-color: grey;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
-    margin: 10pxs;
+    margin: 10px;
     flex: 1;
     margin-left: 280px;
     margin-top: 10px;
@@ -39,21 +26,13 @@ body{
     place-content: center;
 }
 
-/*logo*/
-.logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-
-.logo{
-    width: 150px;
-    height: 100px;
+.table{
+    margin-top: 15px;
+    border: 1px solid black;
 }
 
 /*inputs*/
-.ingresar-repuestos-container input{
+.repuestos-container input{
     width: 50%;
     padding: 5px;
     margin-bottom: 15px;
@@ -62,13 +41,13 @@ body{
     text-align: center;
 }
 
-.ingresar-repuestos-container select{
+.repuestos-container select{
     display: block;
     margin: 20px auto 15px;
 }
 
 /*buttons*/
-.ingresar-repuestos-container button{
+.repuestos-container button{
     background-color: black;
     color: whitesmoke;
     padding: 10px 20px;
@@ -78,13 +57,8 @@ body{
     transition: background-color 0.2s, color 0.2s;
 }
 
-.ingresar-repuestos-container button:hover{
+.repuestos-container button:hover{
     background-color: darkgrey;
     color: black;
 }
 
-/**tabla**/
-.table{
-    margin-top: 15px;
-    border: 1px solid black;
-}

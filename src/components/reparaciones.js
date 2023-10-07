@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/reparaciones.css";
 import SidebarC from "./sidebar";
+import "../styles/reparaciones.css";
 
 function Reparaciones() {
     return (
@@ -26,9 +26,20 @@ function Reparaciones() {
                     <input type="text" placeholder="Notas Adicionales" />
                 </form>
                 <button id="enviar" type="button">Enviar</button>
-                <div className="tabla-reparaciones-container">
-                    <h3>Registro de Reparaciones:</h3>
-                    <table className="table">
+            </div>
+
+            <div className="tabla-reparaciones-container">
+                <h3>Registro de Reparaciones:</h3>
+                <form id="repuestos-form">
+                    <label htmlFor="vehiculos-dropdown">Seleccione el vehiculo de interés:</label>
+                    <select name="vehiculo-a-reparar" id="vehiculo-a-reparar">
+                            <option value="" defaultChecked>Seleccione...</option>
+                            <option value={"Vehiculo 1"}>Vehiculo 1</option>
+                    </select>
+                </form>
+                
+                <table className="table">
+                    <thead>
                         <tr>
                             <th><b>Descripción</b></th>
                             <th><b>Nombre del Dueño</b></th>
@@ -39,6 +50,8 @@ function Reparaciones() {
                             <th><b>Costo Total ($)</b></th>
                             <th><b>Notas Adicionales</b></th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>Cambio de Aceite</td>
                             <td>Diego Fuentes</td>
@@ -49,8 +62,8 @@ function Reparaciones() {
                             <td>60.00</td>
                             <td>Entregar lunes</td>
                         </tr>
-                    </table>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </div>
     );
